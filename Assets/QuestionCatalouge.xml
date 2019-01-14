@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Questions>
+	<Question Text="Von wem stammt die Lebensweisheit: Oamoi dipfeen geht oiwei?">
+     <Answer1 Text="Rohwedder" Correct="False"/>
+     <Answer2 Text="Stoppel" Correct="False"/>
+     <Answer3 Text="Fischbacher" Correct="True"/>
+     <Answer4 Text="Heinze" Correct="False"/>
+	</Question>
+	<Question Text="Wer hat damals auf der Wiesn unterm Tisch gekotzt?">
+     <Answer1 Text="Rohwedder " Correct="false"></Answer1>
+     <Answer2 Text="Stoppel" Correct="False"></Answer2>
+     <Answer3 Text="Fischbacher" Correct="False"></Answer3>
+     <Answer4 Text="Heinze" Correct="True"></Answer4>
+ </Question>
+</Questions>
