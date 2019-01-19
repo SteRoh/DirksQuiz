@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 using UnityEngine.SceneManagement;
 using System.Xml.Linq;
+using System.Threading;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,26 +16,31 @@ public class GameManager : MonoBehaviour
     private Question CurrentQuestion;
 
     [SerializeField]
-    private Text DisplayedQuestion;
+    public Text DisplayedQuestion;
     [SerializeField]
-    private Text FirstAnswerText;
+    public TextMeshProUGUI FirstAnswerText;
     [SerializeField]
-    private Text SecondAnswerText;
+    public TextMeshProUGUI SecondAnswerText;
     [SerializeField]
-    private Text ThirdAnswerText;
+    public TextMeshProUGUI ThirdAnswerText;
     [SerializeField]
-    private Text FourthAnswerText;
+    public TextMeshProUGUI FourthAnswerText;
 
     [SerializeField]
-    private float TimeBetweenQuestions = 1f;
+    private Text AnswerText;
 
+    [SerializeField]
+    private float TimeBetweenQuestions = 5f;
+
+    [SerializeField]
+    private Animator animator;
 
     public void Start()
     {
         //XDocument document = XDocument.Load()
-        TextAsset textAsset = (TextAsset)Resources.Load("QuestionCatalouge.xml");
-        XmlDocument xmldoc = new XmlDocument();
-        xmldoc.LoadXml(textAsset.text);
+        //TextAsset textAsset = (TextAsset)Resources.Load("QuestionCatalouge.xml");
+        //XmlDocument xmldoc = new XmlDocument();
+        //xmldoc.LoadXml(textAsset.text);
 
 
         if (UnansweredQuestions == null || UnansweredQuestions.Count == 0)
@@ -45,6 +52,8 @@ public class GameManager : MonoBehaviour
 
     private void SetCurrentQuestion()
     {
+        //animator.SetTrigger("initState");
+
         int randomQuestionIndex = UnityEngine.Random.Range(0, UnansweredQuestions.Count);
 
         CurrentQuestion = UnansweredQuestions[randomQuestionIndex];
@@ -62,25 +71,25 @@ public class GameManager : MonoBehaviour
         UnansweredQuestions.Remove(CurrentQuestion);
 
         yield return new WaitForSeconds(TimeBetweenQuestions);
-
+        //animator.SetTrigger("initState");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 
     public void UserSelectedAnswer(int selectedAnswer)
     {
-
         if (selectedAnswer == CurrentQuestion.correctAnswer)
         {
-            Debug.Log("Right one Dude");
+            AnswerText.text = "Right one Dude";
         }
         else
         {
-            Debug.Log("Try it agaign");
+            AnswerText.text = "Try it agaign, mongo";
         }
+        animator.SetTrigger("answeredQuestion");
 
         StartCoroutine(TransitionToNextQuestion());
-        TransitionToNextQuestion();
+        //TransitionToNextQuestion();
 
     }
 }
