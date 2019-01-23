@@ -37,6 +37,14 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
+        // XDocument document = XDocument.Load("QuestionCatalouge.xml");
+        // Questions result;
+        // var serializer = new XmlSerializer(typeof(Questions));
+
+        // using (var reader = document.CreateReader())
+        // {
+        //     result = (Questions)serializer.Deserialize(reader);
+        // }
         //XDocument document = XDocument.Load()
         //TextAsset textAsset = (TextAsset)Resources.Load("QuestionCatalouge.xml");
         //XmlDocument xmldoc = new XmlDocument();
