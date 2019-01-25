@@ -1,26 +1,6 @@
-﻿
-
-[System.Serializable]
-public class Question
+﻿namespace XmlQuestion
 {
-    public string question;
-    public string answer1;
-    public string answer2;
-    public string answer3;
-    public string answer4;
 
-    public int correctAnswer;
-
-}
-
-
-namespace XmlQuestion
-{
-    /* 
- Licensed under the Apache License, Version 2.0
-
- http://www.apache.org/licenses/LICENSE-2.0
- */
     using System;
     using System.Xml.Serialization;
     using System.Collections.Generic;
@@ -82,5 +62,6 @@ namespace XmlQuestion
         [XmlElement(ElementName = "Question")]
         public List<Question> Question { get; set; }
     }
+
 
 }
