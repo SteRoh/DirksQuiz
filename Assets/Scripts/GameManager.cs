@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 {
     //public Question[] Questions;
     private static List<XmlQuestion.Question> UnansweredQuestions;
+    private static List<XmlAnswer.Answers> AnswerTexts;
     private XmlQuestion.Question CurrentQuestion;
 
     [SerializeField]
@@ -47,20 +48,28 @@ public class GameManager : MonoBehaviour
                 result = (XmlQuestion.Questions)serializer.Deserialize(reader);
             }
 
-            if (UnansweredQuestions == null )
+            if (UnansweredQuestions == null)
             {
                 UnansweredQuestions = result.Question;
-            }else if( UnansweredQuestions.Count == 0)
+            }
+            else if (UnansweredQuestions.Count == 0)
             {
                 //end of the game
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
+
+            // var serAnswer = new XmlSerializer(typeof(XmlAnswer.Answers));
+            // XmlAnswer.Answers answers;
+            // using (var reader = new StringReader(AnswerCatalouge))
+            // {
+            //     answers = (XmlAnswer.Answers)serializer.Deserialize(reader);
+            // }
 
             SetCurrentQuestion();
         }
-        catch (System.Exception)
+        catch (System.Exception e)
         {
-
+            Debug.Log(e.ToString());
             throw;
         }
     }
@@ -129,6 +138,10 @@ public class GameManager : MonoBehaviour
 
     }
 
+    string AnswerCatalouge = @"<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"" ?>
+<Answers>
+<Answer Text = ""Von wem stammt die Lebensweisheit: Oamoi dipfeen geht imma?"" State=""True""/>
+ </Answers>";
 
     string QuestionCatalouge = @"<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"" ?>
 <Questions>
@@ -319,4 +332,7 @@ public class GameManager : MonoBehaviour
     <Answer4 Text = ""YOU HAVE NO RESPECT FOR LOGIC"" Correct=""false""></Answer4>
 </Question>
 </Questions>";
+
+
+
 }
