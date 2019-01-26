@@ -2,15 +2,15 @@
 <Questions>
 <Question Text="Von wem stammt die Lebensweisheit: Oamoi dipfeen geht imma?">
     <Answer1 Text="Rohwedder " Correct="false"></Answer1>
-    <Answer2 Text="Stoppel" Correct="False"></Answer2>
-    <Answer3 Text="Fischbacher" Correct="True"></Answer3>
-    <Answer4 Text="Heinze" Correct="False"></Answer4>
+    <Answer2 Text="Stoppel" Correct="false"></Answer2>
+    <Answer3 Text="Fischbacher" Correct="true"></Answer3>
+    <Answer4 Text="Heinze" Correct="false"></Answer4>
  </Question>
 <Question Text="Wer hat damals auf der Wiesn unterm Tisch gekotzt?">
     <Answer1 Text="Rohwedder " Correct="false"></Answer1>
-    <Answer2 Text="Stoppel" Correct="False"></Answer2>
-    <Answer3 Text="Fischbacher" Correct="False"></Answer3>
-    <Answer4 Text="Heinze" Correct="True"></Answer4>
+    <Answer2 Text="Stoppel" Correct="false"></Answer2>
+    <Answer3 Text="Fischbacher" Correct="false"></Answer3>
+    <Answer4 Text="Heinze" Correct="true"></Answer4>
 </Question>
 <Question Text="Wieviel Watt hatte Glockenjunges Basemachine auf der SMS?">
     <Answer1 Text="3kW" Correct="true"></Answer1>
@@ -21,32 +21,32 @@
 <Question Text="Was ist mit dem Kühlschrank auf der SMS passiert?">
     <Answer1 Text="Wurde über den Zeltplatz gassi geführt" Correct="true"></Answer1>
     <Answer2 Text="Wurde gesprengt" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer3 Text="Es gab keinen Kühlschrank" Correct="false"></Answer3>
+    <Answer4 Text="Wurde geklaut" Correct="false"></Answer4>
 </Question>
 <Question Text="Wer ist auf der Betriebsversammlung verschollen?">
     <Answer1 Text="Franz" Correct="true"></Answer1>
     <Answer2 Text="Dirk" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer3 Text="Flo" Correct="false"></Answer3>
+    <Answer4 Text="Stoppel" Correct="false"></Answer4>
 </Question>
 <Question Text="Wie hieß der Mitbewohner vom Christoph?">
     <Answer1 Text="Johannes" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer2 Text="Carlos" Correct="false"></Answer2>
+    <Answer3 Text="Olaf" Correct="false"></Answer3>
+    <Answer4 Text="Christian" Correct="false"></Answer4>
 </Question>
 <Question Text="Wer hat seinen Pensi auf der Betriebsversammlung entblöst?">
     <Answer1 Text="Dirk" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer2 Text="Stefano" Correct="false"></Answer2>
+    <Answer3 Text="Christian" Correct="false"></Answer3>
+    <Answer4 Text="Franz" Correct="false"></Answer4>
 </Question>
 <Question Text="Um wieviel Uhr geht Flo immer zum kacken?">
     <Answer1 Text="13 Uhr" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer2 Text="14 Uhr" Correct="false"></Answer2>
+    <Answer3 Text="12 Uhr" Correct="false"></Answer3>
+    <Answer4 Text="Nie" Correct="false"></Answer4>
 </Question>
 <Question Text="Wieviel Katzen hatte Franz schwuler Mitbewohner?">
     <Answer1 Text="3" Correct="true"></Answer1>
@@ -57,8 +57,8 @@
 <Question Text="Was haben wir bei Franz um zwei Uhr Nachts gegessen?">
     <Answer1 Text="eklige Pizza" Correct="true"></Answer1>
     <Answer2 Text="ekligen Döner" Correct="false"></Answer2>
-    <Answer3 Text="1" Correct="false"></Answer3>
-    <Answer4 Text="2" Correct="false"></Answer4>
+    <Answer3 Text="leckere Pizza" Correct="false"></Answer3>
+    <Answer4 Text="leckeren Döner" Correct="false"></Answer4>
 </Question>
 <Question Text="Wer war der lustigste Smiley?">
     <Answer1 Text="Dirk" Correct="true"></Answer1>
@@ -164,11 +164,11 @@
 </Question>
 <Question Text="Welcher Game of Thrones Charakter passt am besten zum Dirk?">
     <Answer1 Text="Hodor" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer2 Text="Khal Drogo" Correct="false"></Answer2>
+    <Answer3 Text="Tyrion" Correct="false"></Answer3>
+    <Answer4 Text="Daenerys" Correct="false"></Answer4>
 </Question>
-<Question Text="Was würdest du eher tun (Negerschwanz)?">
+<Question Text="Was würdest du eher tun?">
     <Answer1 Text="Auf Kuchen sitzen und Penis essen" Correct="true"></Answer1>
     <Answer2 Text="Auf Penis sitzen und Kuchen essen" Correct="false"></Answer2>
     <Answer3 Text="Auf Penis sitzen und Penis essen" Correct="false"></Answer3>
