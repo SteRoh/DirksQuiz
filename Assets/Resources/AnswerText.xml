@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<Answers>
+<Answer Text="Nice One" State="True"/>
+<Answer Text="NIce try!" State="False"/>
+<Answer Text="Seriously?" State="False"/>
+<Answer Text="Not" State="False"/>
+<Answer Text="Einfach NEIN!" State="False"/>
+<Answer Text="Probiers nochmal" State="False"/>
+<Answer Text="Junge, was los mit dir?" State="False"/>
+</Answers>
