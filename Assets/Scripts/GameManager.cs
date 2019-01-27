@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     private static bool FirstStart = true;
     private static List<XmlQuestion.Question> UnansweredQuestions;
     private static List<XmlAnswer.Answers> AnswerTexts;
+    private static List<string> TrueAnswers;
+    private static List<string> FalseAnswers;
+
     private XmlQuestion.Question CurrentQuestion;
 
     [SerializeField]
@@ -58,14 +61,31 @@ public class GameManager : MonoBehaviour
                         UnansweredQuestions = result.Question;
                     }
                 }
-                // var serAnswer = new XmlSerializer(typeof(XmlAnswer.Answers));
-                // XmlAnswer.Answers answers;
-                // using (var reader = new StringReader(AnswerCatalouge))
-                // {
-                //     answers = (XmlAnswer.Answers)serializer.Deserialize(reader);
-                // }   
-                FirstStart = false;
 
+#region AnswerImport    
+                var serAnswer = new XmlSerializer(typeof(XmlAnswer.Answers));
+                XmlAnswer.Answers answers;
+                using (var reader = new StringReader(AnswerCatalouge))
+                {
+                    answers = (XmlAnswer.Answers)serAnswer.Deserialize(reader);
+                }
+
+                TrueAnswers = new List<string>();
+                FalseAnswers = new List<string>();
+
+                foreach (var item in answers.Answer)
+                {
+                    if (Utilities.Str2bool(item.State))
+                    {
+                        TrueAnswers.Add(item.Text);
+                    }
+                    else
+                    {
+                        FalseAnswers.Add(item.Text);
+                    }
+                }
+#endregion
+                FirstStart = false;
                 ProgressBarInit = new ProgressBar();
             }
 
@@ -74,8 +94,6 @@ public class GameManager : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-
-
 
             SetCurrentQuestion();
         }
@@ -97,7 +115,7 @@ public class GameManager : MonoBehaviour
         DisplayedQuestion.text = CurrentQuestion.Text;
 
         List<Tuple<string, bool>> tmpAnswers = new List<Tuple<string, bool>>();
-        tmpAnswers.Add( new Tuple<string, bool>(CurrentQuestion.Answer1.Text, Utilities.Str2bool(CurrentQuestion.Answer1.Correct)));
+        tmpAnswers.Add(new Tuple<string, bool>(CurrentQuestion.Answer1.Text, Utilities.Str2bool(CurrentQuestion.Answer1.Correct)));
         tmpAnswers.Add(new Tuple<string, bool>(CurrentQuestion.Answer2.Text, Utilities.Str2bool(CurrentQuestion.Answer2.Correct)));
         tmpAnswers.Add(new Tuple<string, bool>(CurrentQuestion.Answer3.Text, Utilities.Str2bool(CurrentQuestion.Answer3.Correct)));
         tmpAnswers.Add(new Tuple<string, bool>(CurrentQuestion.Answer4.Text, Utilities.Str2bool(CurrentQuestion.Answer4.Correct)));
@@ -140,22 +158,19 @@ public class GameManager : MonoBehaviour
     public void UserSelectedAnswer(int selectedAnswer)
     {
         // selectedAnswer could be 1,2,3 or 4
-
         if (selectedAnswer == CorrectAnswer)
         {
-            AnswerText.text = "Right one Dude";
-            ProgressBarInit.RightAnswer();
+            AnswerText.text = TrueAnswers.ElementAt(UnityEngine.Random.Range(0, TrueAnswers.Count));
+            //ProgressBarInit.RightAnswer();
         }
         else
         {
-            AnswerText.text = "Try it agaign, mongo";
-            ProgressBarInit.WrongAnswer();
+            AnswerText.text = FalseAnswers.ElementAt(UnityEngine.Random.Range(0, FalseAnswers.Count));
+            //ProgressBarInit.WrongAnswer();
         }
         animator.SetTrigger("answeredQuestion");
 
         StartCoroutine(TransitionToNextQuestion());
         //TransitionToNextQuestion();
-
     }
-
 }
