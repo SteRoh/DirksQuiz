@@ -28,7 +28,22 @@ public static class Utilities
 
     public static string AnswerCatalouge = @"<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"" ?>
 <Answers>
-<Answer Text=""Von wem stammt die Lebensweisheit: Oamoi dipfeen geht imma?"" State=""True""/>
+  <Answer Text=""Nice One"" State=""True""/>
+  <Answer Text=""Läuft bei dir!"" State=""True""/>
+  <Answer Text=""Richtig Diggi"" State=""True""/>
+  <Answer Text=""Hast nen Lauf"" State=""True""/>
+  <Answer Text=""Probs an dich!"" State=""True""/>
+  <Answer Text=""Nice try!"" State=""False""/>
+  <Answer Text=""Seriously?"" State=""False""/>
+  <Answer Text=""Not"" State=""False""/>
+  <Answer Text=""Nope"" State=""False""/>
+  <Answer Text=""Einfach NEIN!"" State=""False""/>
+  <Answer Text=""Probiers nochmal"" State=""False""/>
+  <Answer Text=""Junge, was los mit dir?"" State=""False""/>
+  <Answer Text=""Bist du dumm??"" State=""False""/>
+  <Answer Text=""Enttäuschend!"" State=""False""/>
+  <Answer Text=""Lass es lieber"" State=""False""/>
+  <Answer Text=""Junge, was los mit dir?"" State=""False""/>
  </Answers>";
 
     public static string QuestionCatalouge = @"<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes"" ?>

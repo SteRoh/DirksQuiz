@@ -10,12 +10,13 @@ public class ProgressBar : MonoBehaviour
 
     public Slider ProgressBarSlider;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         NeededAnswers = 20;
         CurrentCorrectAnswers = 0;
         ProgressBarSlider.maxValue = 20;
         ProgressBarSlider.minValue = 0;
+        ProgressBarSlider.value = 10;
     }
 
     public void RightAnswer()

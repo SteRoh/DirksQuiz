@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     private static List<XmlAnswer.Answers> AnswerTexts;
     private static List<string> TrueAnswers;
     private static List<string> FalseAnswers;
+    private static int NumberOfCorrectAnswers;
 
     private XmlQuestion.Question CurrentQuestion;
 
@@ -42,7 +43,8 @@ public class GameManager : MonoBehaviour
     private Animator animator;
 
     [SerializeField]
-    public static ProgressBar ProgressBarInit;
+    public Slider ProgressBarInstance;
+
 
     public void Start()
     {
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
 #region AnswerImport    
                 var serAnswer = new XmlSerializer(typeof(XmlAnswer.Answers));
                 XmlAnswer.Answers answers;
-                using (var reader = new StringReader(AnswerCatalouge))
+                using (var reader = new StringReader(Utilities.AnswerCatalouge))
                 {
                     answers = (XmlAnswer.Answers)serAnswer.Deserialize(reader);
                 }
@@ -86,7 +88,12 @@ public class GameManager : MonoBehaviour
                 }
 #endregion
                 FirstStart = false;
-                ProgressBarInit = new ProgressBar();
+                ProgressBarInstance.value = 0;
+                NumberOfCorrectAnswers = 0;
+            }
+            else
+            {
+                ProgressBarInstance.value = NumberOfCorrectAnswers;
             }
 
             //end of the game
@@ -161,12 +168,19 @@ public class GameManager : MonoBehaviour
         if (selectedAnswer == CorrectAnswer)
         {
             AnswerText.text = TrueAnswers.ElementAt(UnityEngine.Random.Range(0, TrueAnswers.Count));
-            //ProgressBarInit.RightAnswer();
+            ProgressBarInstance.value = ++NumberOfCorrectAnswers;
+            if (NumberOfCorrectAnswers == 10)
+            {
+                animator.SetTrigger("answeredQuestion");
+                AnswerText.text = "GRATZ DIRK, U DID IT BRO!";
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+            }
         }
         else
         {
             AnswerText.text = FalseAnswers.ElementAt(UnityEngine.Random.Range(0, FalseAnswers.Count));
-            //ProgressBarInit.WrongAnswer();
+            ProgressBarInstance.value = 0;
+            NumberOfCorrectAnswers = 0;
         }
         animator.SetTrigger("answeredQuestion");
 
