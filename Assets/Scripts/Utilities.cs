@@ -144,12 +144,6 @@ public static class Utilities
     <Answer3 Text=""Suzie Grime"" Correct=""false""></Answer3>
     <Answer4 Text=""100 Sekunden Physik"" Correct=""false""></Answer4>
 </Question>
-<Question Text=""Was heißt &quot;Dirk Heinze&quot; auf chinesisch?"">
-    <Answer1 Text=""德克海因策"" Correct=""true""></Answer1>
-    <Answer2 Text=""王八蛋"" Correct=""false""></Answer2>
-    <Answer3 Text=""阴茎"" Correct=""false""></Answer3>
-    <Answer4 Text=""黑公鸡"" Correct=""false""></Answer4>
-</Question>
 <Question Text=""Welches chinesische Sternzeichen ist Dirk?"">
     <Answer1 Text=""Schaf"" Correct=""true""></Answer1>
     <Answer2 Text=""Drache"" Correct=""false""></Answer2>

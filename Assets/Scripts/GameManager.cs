@@ -45,6 +45,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public Slider ProgressBarInstance;
 
+    [SerializeField]
+    public Text SliderText;
+
 
     public void Start()
     {
@@ -64,7 +67,7 @@ public class GameManager : MonoBehaviour
                     }
                 }
 
-#region AnswerImport    
+                #region AnswerImport    
                 var serAnswer = new XmlSerializer(typeof(XmlAnswer.Answers));
                 XmlAnswer.Answers answers;
                 using (var reader = new StringReader(Utilities.AnswerCatalouge))
@@ -86,7 +89,7 @@ public class GameManager : MonoBehaviour
                         FalseAnswers.Add(item.Text);
                     }
                 }
-#endregion
+                #endregion
                 FirstStart = false;
                 ProgressBarInstance.value = 0;
                 NumberOfCorrectAnswers = 0;
@@ -96,6 +99,7 @@ public class GameManager : MonoBehaviour
                 ProgressBarInstance.value = NumberOfCorrectAnswers;
             }
 
+            SliderText.text = ProgressBarInstance.value + " / 10";
             //end of the game
             if (UnansweredQuestions.Count == 0)
             {
@@ -113,12 +117,8 @@ public class GameManager : MonoBehaviour
 
     private void SetCurrentQuestion()
     {
-        //animator.SetTrigger("initState");
-
         int randomQuestionIndex = UnityEngine.Random.Range(0, UnansweredQuestions.Count);
-
         CurrentQuestion = UnansweredQuestions[randomQuestionIndex];
-
         DisplayedQuestion.text = CurrentQuestion.Text;
 
         List<Tuple<string, bool>> tmpAnswers = new List<Tuple<string, bool>>();
@@ -155,9 +155,7 @@ public class GameManager : MonoBehaviour
     IEnumerator TransitionToNextQuestion()
     {
         UnansweredQuestions.Remove(CurrentQuestion);
-
         yield return new WaitForSeconds(TimeBetweenQuestions);
-        //animator.SetTrigger("initState");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -169,11 +167,12 @@ public class GameManager : MonoBehaviour
         {
             AnswerText.text = TrueAnswers.ElementAt(UnityEngine.Random.Range(0, TrueAnswers.Count));
             ProgressBarInstance.value = ++NumberOfCorrectAnswers;
+
             if (NumberOfCorrectAnswers == 10)
             {
                 animator.SetTrigger("answeredQuestion");
                 AnswerText.text = "GRATZ DIRK, U DID IT BRO!";
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
         else
@@ -182,9 +181,10 @@ public class GameManager : MonoBehaviour
             ProgressBarInstance.value = 0;
             NumberOfCorrectAnswers = 0;
         }
+        SliderText.text = ProgressBarInstance.value + " / 10";
+
         animator.SetTrigger("answeredQuestion");
 
         StartCoroutine(TransitionToNextQuestion());
-        //TransitionToNextQuestion();
     }
 }
