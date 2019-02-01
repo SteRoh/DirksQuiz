@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
             {
                 animator.SetTrigger("answeredQuestion");
                 AnswerText.text = "GRATZ DIRK, U DID IT BRO!";
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
             }
         }
         else
