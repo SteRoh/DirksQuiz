@@ -15,4 +15,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void RedoGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
