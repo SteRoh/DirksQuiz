@@ -36,7 +36,7 @@
     <Answer3 Text="Olaf" Correct="false"></Answer3>
     <Answer4 Text="Christian" Correct="false"></Answer4>
 </Question>
-<Question Text="Wer hat seinen Pensi auf der Betriebsversammlung entblöst?">
+<Question Text="Wer hat seinen Penis auf der Betriebsversammlung entblöst?">
     <Answer1 Text="Dirk" Correct="true"></Answer1>
     <Answer2 Text="Stefano" Correct="false"></Answer2>
     <Answer3 Text="Christian" Correct="false"></Answer3>
@@ -201,8 +201,80 @@
 <Question Text="Wie hieß kein Inder bei 1SP5?">
     <Answer1 Text="Jamal" Correct="true"></Answer1>
     <Answer2 Text="Jalpesh" Correct="false"></Answer2>
-    <Answer3 Text="Ammad" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+    <Answer3 Text="Amit" Correct="false"></Answer3>
+    <Answer4 Text="Gru" Correct="false"></Answer4>
+</Question>
+<Question Text="Wieviele Kinder hat Christian?">
+    <Answer1 Text="2" Correct="true"></Answer1>
+    <Answer2 Text="1" Correct="false"></Answer2>
+    <Answer3 Text="3" Correct="false"></Answer3>
+    <Answer4 Text="0" Correct="false"></Answer4>
+</Question>
+<Question Text="Gegen welchen Hacker gab die italienische Polizei auf?">
+    <Answer1 Text="Phineas Fisher" Correct="true"></Answer1>
+    <Answer2 Text="M0nk3Y" Correct="false"></Answer2>
+    <Answer3 Text="The Homeless Hacker" Correct="false"></Answer3>
+    <Answer4 Text="Dark Dante" Correct="false"></Answer4>
+</Question>
+<Question Text="Was kostet der teuerste Virbator?">
+    <Answer1 Text="1,8 Millionen Dollar" Correct="true"></Answer1>
+    <Answer2 Text="1000€" Correct="false"></Answer2>
+    <Answer3 Text="50000 Pfund" Correct="false"></Answer3>
+    <Answer4 Text="10 Milliarden Pesos" Correct="false"></Answer4>
+</Question>
+<Question Text="Sex a la "albanisch" heißt ...">
+    <Answer1 Text="Penis in der Kniekehle reiben" Correct="true"></Answer1>
+    <Answer2 Text="SM-Spiele" Correct="false"></Answer2>
+    <Answer3 Text="Sie pisst im in den Mund" Correct="false"></Answer3>
+    <Answer4 Text="Body-to-Body Massage" Correct="false"></Answer4>
+</Question>
+<Question Text="Wieviel Redezeit hatte am Anfang jeder beim Daily?">
+    <Answer1 Text="2 Minuten" Correct="true"></Answer1>
+    <Answer2 Text="1 Minute" Correct="false"></Answer2>
+    <Answer3 Text="3 Minute" Correct="false"></Answer3>
+    <Answer4 Text="Ist mir doch egal. Ich rede solang ich will." Correct="false"></Answer4>
+</Question>
+<Question Text="Wer hatt die besten Tanzmoves von Dirk im Ruby aufgenommen?">
+    <Answer1 Text="Stoppel" Correct="true"></Answer1>
+    <Answer2 Text="Stefano" Correct="false"></Answer2>
+    <Answer3 Text="Fisch" Correct="false"></Answer3>
+    <Answer4 Text="Glockenjunge" Correct="false"></Answer4>
+</Question>
+<Question Text="Welchen Rang hat Flo im CS GO?">
+    <Answer1 Text="Silber I" Correct="true"></Answer1>
+    <Answer2 Text="Silber II" Correct="false"></Answer2>
+    <Answer3 Text="Gold" Correct="false"></Answer3>
+    <Answer4 Text="Bronze" Correct="false"></Answer4>
+</Question>
+<Question Text="Wie heißt der TS Server vom Glockenjungen?">
+    <Answer1 Text="meints3.com" Correct="true"></Answer1>
+    <Answer2 Text="suckers4life.com" Correct="false"></Answer2>
+    <Answer3 Text="Bullenfabrik.de" Correct="false"></Answer3>
+    <Answer4 Text="Zocken.ddns.net" Correct="false"></Answer4>
+</Question>
+<Question Text="Welchen Song kann Stefano auf der Ukulele spielen?">
+    <Answer1 Text="Gar keinen" Correct="false"></Answer1>
+    <Answer2 Text="Alle meine Entchen" Correct="false"></Answer2>
+    <Answer3 Text="Somewhere over the Rainbow" Correct="false"></Answer3>
+    <Answer4 Text="Stay with me" Correct="true"></Answer4>
+</Question>
+<Question Text="Welcher Student hat in der Rohde Kantine am meisten bezahlt?">
+    <Answer1 Text="Julian" Correct="true"></Answer1>
+    <Answer2 Text="Flo" Correct="false"></Answer2>
+    <Answer3 Text="Matthias" Correct="false"></Answer3>
+    <Answer4 Text="Stoppel" Correct="false"></Answer4>
+</Question>
+<Question Text="Wie hieß keine weibliche Werkstudentin in der Abteilung?">
+    <Answer1 Text="Andrea" Correct="true"></Answer1>
+    <Answer2 Text="Katharina" Correct="false"></Answer2>
+    <Answer3 Text="Lisa" Correct="false"></Answer3>
+    <Answer4 Text="Manuela" Correct="false"></Answer4>
+</Question>
+<Question Text="Welchen Spitznamen hat der Freund vom Giulio bekommen?">
+    <Answer1 Text="Neymar" Correct="true"></Answer1>
+    <Answer2 Text="Bonzo" Correct="false"></Answer2>
+    <Answer3 Text="Schönling" Correct="false"></Answer3>
+    <Answer4 Text="Lappen" Correct="false"></Answer4>
 </Question>
 <Question Text="Welchen Satz will Stefan beim Daily nicht hören?">
     <Answer1 Text="Es funktioniert eigentlich" Correct="true"></Answer1>
