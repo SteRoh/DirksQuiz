@@ -174,11 +174,11 @@
     <Answer3 Text="Auf Penis sitzen und Penis essen" Correct="false"></Answer3>
     <Answer4 Text="Auf einer fetten sitzen" Correct="false"></Answer4>
 </Question>
-<Question Text="... (Binäre/Bitweise Operationen) ergibt?">
-    <Answer1 Text="" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+<Question Text="(((11 | 4)>>1) & 3) = ??">
+    <Answer1 Text="3" Correct="true"></Answer1>
+    <Answer2 Text="0" Correct="false"></Answer2>
+    <Answer3 Text="1" Correct="false"></Answer3>
+    <Answer4 Text="5" Correct="false"></Answer4>
 </Question>
 <Question Text="Was ist kein Begriff in der Arnold C Syntax?">
     <Answer1 Text="TALK TO MY HAND" Correct="true"></Answer1>
@@ -186,21 +186,70 @@
     <Answer3 Text="I NEED YOU CLOTHES YOUR BOOTS AND YOUR MOTORCYCLE" Correct="false"></Answer3>
     <Answer4 Text="YOU HAVE NO RESPECT FOR LOGIC" Correct="false"></Answer4>
 </Question>
-<!-- <Question Text="?">
-    <Answer1 Text="" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
+<Question Text="Wer oder Was war Ersins Perle?">
+    <Answer1 Text="Ein schwarzes Girl" Correct="true"></Answer1>
+    <Answer2 Text="Seine Goldkette" Correct="false"></Answer2>
+    <Answer3 Text="Flo's Schwester" Correct="false"></Answer3>
+    <Answer4 Text="Sein Goldring" Correct="false"></Answer4>
+</Question>
+<Question Text="Was für ein Auto fährt der Glockenjunge?">
+    <Answer1 Text="Mustang" Correct="true"></Answer1>
+    <Answer2 Text="Ford" Correct="false"></Answer2>
+    <Answer3 Text="Audi" Correct="false"></Answer3>
+    <Answer4 Text="Gar keins" Correct="false"></Answer4>
+</Question>
+<Question Text="Wie hieß kein Inder bei 1SP5?">
+    <Answer1 Text="Jamal" Correct="true"></Answer1>
+    <Answer2 Text="Jalpesh" Correct="false"></Answer2>
+    <Answer3 Text="Ammad" Correct="false"></Answer3>
     <Answer4 Text="" Correct="false"></Answer4>
 </Question>
-<Question Text="?">
-    <Answer1 Text="" Correct="true"></Answer1>
-    <Answer2 Text="" Correct="false"></Answer2>
-    <Answer3 Text="" Correct="false"></Answer3>
-    <Answer4 Text="" Correct="false"></Answer4>
+<Question Text="Welchen Satz will Stefan beim Daily nicht hören?">
+    <Answer1 Text="Es funktioniert eigentlich" Correct="true"></Answer1>
+    <Answer2 Text="War am Wochenende mies saufen" Correct="false"></Answer2>
+    <Answer3 Text="Ich hab Kuchen für alle dabei" Correct="false"></Answer3>
+    <Answer4 Text="Das Feature funktioneirt noch nicht" Correct="false"></Answer4>
 </Question>
-Wiesn
-Saufen bei Glockenjunge
-Betriebsversammlung (Franz verschollen)
-Kasten Bier nach der Arbeit (Augustiner, Dreier Packung Billig Tengelmann Pizza, Johannes war dabei (Mitbewohner von Glockenjunge))
-SMS:  -->
+<Question Text="Was isst Stefano jeden Vormittag in der Arbeit?">
+    <Answer1 Text="Müsli in der Tasse" Correct="true"></Answer1>
+    <Answer2 Text="Erdbeeren mit scheiße" Correct="false"></Answer2>
+    <Answer3 Text="Cornflakes in der Tasse" Correct="false"></Answer3>
+    <Answer4 Text="Gar nichts" Correct="false"></Answer4>
+</Question>
+<Question Text="Wer ist der Schönling?">
+    <Answer1 Text="Giulio" Correct="true"></Answer1>
+    <Answer2 Text="Dirk" Correct="false"></Answer2>
+    <Answer3 Text="Stefano" Correct="false"></Answer3>
+    <Answer4 Text="Michael" Correct="false"></Answer4>
+</Question>
+<Question Text="Wer hat dir 2018 auf Facebook gratuliert?">
+    <Answer1 Text="Astrid Greiner" Correct="true"></Answer1>
+    <Answer2 Text="Jessica Valtin" Correct="false"></Answer2>
+    <Answer3 Text="Peter Steinhof" Correct="false"></Answer3>
+    <Answer4 Text="Elena Stanciu" Correct="false"></Answer4>
+</Question>
+<Question Text="In welchem Jahr bist du Facebook beigetreten?">
+    <Answer1 Text="2010" Correct="true"></Answer1>
+    <Answer2 Text="2009" Correct="false"></Answer2>
+    <Answer3 Text="2011" Correct="false"></Answer3>
+    <Answer4 Text="2012" Correct="false"></Answer4>
+</Question>
+<Question Text="Wann wurde Rohde &amp; Schwarz gegründet?">
+    <Answer1 Text="1933" Correct="true"></Answer1>
+    <Answer2 Text="1932" Correct="false"></Answer2>
+    <Answer3 Text="1940" Correct="false"></Answer3>
+    <Answer4 Text="1955" Correct="false"></Answer4>
+</Question>
+<Question Text="Wer war der größte Urbayer in der Abteilung?">
+    <Answer1 Text="Matthias Lechner" Correct="true"></Answer1>
+    <Answer2 Text="Flo" Correct="false"></Answer2>
+    <Answer3 Text="Stefano" Correct="false"></Answer3>
+    <Answer4 Text="Michi" Correct="false"></Answer4>
+</Question>
+<Question Text="In welche Abteilung ist Flo bei Rohde &amp; Schwarz gewechselt?">
+    <Answer1 Text="1GD1" Correct="true"></Answer1>
+    <Answer2 Text="1GD2" Correct="false"></Answer2>
+    <Answer3 Text="8GE2" Correct="false"></Answer3>
+    <Answer4 Text="1SE3" Correct="false"></Answer4>
+</Question>
 </Questions>
