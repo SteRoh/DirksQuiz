@@ -9,8 +9,8 @@ public class headmove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(new Vector2(50, 50));
+        rb.AddForce(new Vector2(Random.Range(10000f, 5000f), Random.Range(-10000f, -5000f)));
+        rb.AddTorque(5000f, ForceMode2D.Impulse);
     }
     void Update()
     {
