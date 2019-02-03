@@ -16,4 +16,16 @@
   <Answer Text="Enttäuschend!" State="False"/>
   <Answer Text="Lass es lieber" State="False"/>
   <Answer Text="Junge, was los mit dir?" State="False"/>
+  <Answer Text="Depp, du bläda?" State="False"/>
+  <Answer Text="Diiigi" State="False"/>
+  <Answer Text="Beschte" State="True"/>
+  <Answer Text="Nicenstein" State="True"/>
+  <Answer Text="Du Lappen" State="False"/>
+  <Answer Text="Komm mal klar" State="False"/>
+  <Answer Text="Safe" State="True"/>
+  <Answer Text="Niiaacht!!" State="False"/>
+  <Answer Text="Was ein Lelek" State="False"/>
+  <Answer Text="Crazy Brain" State="True"/>
+  <Answer Text="Wie kann man das nicht wissen!!" State="False"/>
+  <Answer Text="Crazy Dude" State="True"/>
 </Answers>
