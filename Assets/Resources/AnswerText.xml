@@ -5,6 +5,7 @@
   <Answer Text="Richtig Diggi" State="True"/>
   <Answer Text="Hast nen Lauf" State="True"/>
   <Answer Text="Probs an dich!" State="True"/>
+  <Answer Text="Wir lieben dich!" State="True"/>
   <Answer Text="Nice try!" State="False"/>
   <Answer Text="Seriously?" State="False"/>
   <Answer Text="Not" State="False"/>
