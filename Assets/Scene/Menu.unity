@@ -150,7 +150,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 164, y: -136}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 100, y: 144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &42460209
 MonoBehaviour:
@@ -178,9 +178,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3, y: -1.7}
+  m_Offset: {x: -0.16431734, y: -28.133186}
   serializedVersion: 2
-  m_Radius: 51
+  m_Radius: 40.70821
 --- !u!50 &42460211
 Rigidbody2D:
   serializedVersion: 4
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 40.1887, y: -6.989287, z: 47.17803, w: -13.486895}
+  m_margin: {x: 86.47144, y: 9.287643, z: 73.72652, w: -13.486895}
   m_textInfo:
     textComponent: {fileID: 0}
     characterCount: 24
@@ -833,7 +833,7 @@ MonoBehaviour:
     spaceCount: 6
     wordCount: 5
     linkCount: 0
-    lineCount: 3
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -1316,7 +1316,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -11, y: 215}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 110.7, y: 119.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1355112695
 MonoBehaviour:
@@ -1344,9 +1344,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3, y: -1.7}
+  m_Offset: {x: -3.0988503, y: -14.734084}
   serializedVersion: 2
-  m_Radius: 51
+  m_Radius: 33.647297
 --- !u!50 &1355112697
 Rigidbody2D:
   serializedVersion: 4
@@ -1649,7 +1649,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -185, y: -104}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 124, y: 119.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714496220
 MonoBehaviour:
@@ -1677,9 +1677,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.3, y: -1.7}
+  m_Offset: {x: 18.119835, y: -21.34552}
   serializedVersion: 2
-  m_Radius: 51
+  m_Radius: 36.29433
 --- !u!50 &1714496222
 Rigidbody2D:
   serializedVersion: 4

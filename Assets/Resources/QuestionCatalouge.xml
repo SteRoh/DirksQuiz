@@ -324,4 +324,22 @@
     <Answer3 Text="8GE2" Correct="false"></Answer3>
     <Answer4 Text="1SE3" Correct="false"></Answer4>
   </Question>
+  <Question Text="Wie oft gehen Dirk &amp; Moni ins Fitnessstudio?">
+    <Answer1 Text="Jeden Dienstag" Correct="false"></Answer1>
+    <Answer2 Text="Jeden zweiten Dienstag" Correct="false"></Answer2>
+    <Answer3 Text="Einmal im Monat" Correct="false"></Answer3>
+    <Answer4 Text="Puuuuhhh....." Correct="true"></Answer4>
+  </Question>
+  <Question Text="Aus was bestehen die Wolken größtenteils?">
+    <Answer1 Text="Linux Servers" Correct="true"></Answer1>
+    <Answer2 Text="Luft und Wasserdampf" Correct="false"></Answer2>
+    <Answer3 Text="Zuckerwatte" Correct="false"></Answer3>
+    <Answer4 Text="Gaszeug" Correct="false"></Answer4>
+  </Question>
+  <Question Text="Welchen Build Job gibt es wirklich?">
+    <Answer1 Text="Handjob" Correct="true"></Answer1>
+    <Answer2 Text="Blowjob" Correct="false"></Answer2>
+    <Answer3 Text="Rimjob" Correct="false"></Answer3>
+    <Answer4 Text="Teilzeitjob" Correct="false"></Answer4>
+  </Question>
 </Questions>

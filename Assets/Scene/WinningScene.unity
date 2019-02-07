@@ -553,9 +553,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -9.686954, y: -3.5638287}
+  m_Offset: {x: -9.686951, y: -16.016268}
   serializedVersion: 2
-  m_Radius: 44.47688
+  m_Radius: 34.64597
 --- !u!50 &624504149
 Rigidbody2D:
   serializedVersion: 4
@@ -648,8 +648,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.30569172}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.700012, y: -22.799988}
-  m_SizeDelta: {x: -130.5, y: -45.799988}
+  m_AnchoredPosition: {x: 0, y: 0.05001831}
+  m_SizeDelta: {x: 0, y: -0.10004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034347220
 MonoBehaviour:
@@ -671,7 +671,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "You \nDid \nIt"
+  m_text: "Gl\xFCckwunsch!\nSchicke folgenden Code: \n\"Ich bin ein Mongo, her mit
+    meinem Geschenk\"\n an Flo, Michi & Stefano"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -700,12 +701,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 138.2
+  m_fontSize: 80
   m_fontSizeBase: 138.2
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 80
   m_fontStyle: 33
   m_textAlignment: 514
   m_isAlignmentEnumConverted: 1
@@ -741,12 +742,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: -2.4805114, z: 0, w: 5.8078218}
   m_textInfo:
     textComponent: {fileID: 0}
-    characterCount: 12
+    characterCount: 107
     spriteCount: 0
-    spaceCount: 4
-    wordCount: 3
+    spaceCount: 18
+    wordCount: 16
     linkCount: 0
-    lineCount: 3
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
