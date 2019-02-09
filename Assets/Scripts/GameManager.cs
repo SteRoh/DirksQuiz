@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public Text SliderText;
 
+    private int NeededAnswer = 20;
 
     public void Start()
     {
@@ -99,7 +100,7 @@ public class GameManager : MonoBehaviour
                 ProgressBarInstance.value = NumberOfCorrectAnswers;
             }
 
-            SliderText.text = ProgressBarInstance.value + " / 10";
+            SliderText.text = ProgressBarInstance.value + " / " + NeededAnswer;
             //end of the game
             if (UnansweredQuestions.Count == 0)
             {
@@ -168,7 +169,7 @@ public class GameManager : MonoBehaviour
             AnswerText.text = TrueAnswers.ElementAt(UnityEngine.Random.Range(0, TrueAnswers.Count));
             ProgressBarInstance.value = ++NumberOfCorrectAnswers;
 
-            if (NumberOfCorrectAnswers == 10)
+            if (NumberOfCorrectAnswers == NeededAnswer)
             {
                 animator.SetTrigger("answeredQuestion");
                 AnswerText.text = "GRATZ DIRK, U DID IT BRO!";
@@ -181,7 +182,7 @@ public class GameManager : MonoBehaviour
             ProgressBarInstance.value = 0;
             NumberOfCorrectAnswers = 0;
         }
-        SliderText.text = ProgressBarInstance.value + " / 10";
+        SliderText.text = ProgressBarInstance.value + " / " + NeededAnswer;
 
         animator.SetTrigger("answeredQuestion");
 

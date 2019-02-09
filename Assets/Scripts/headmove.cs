@@ -10,7 +10,7 @@ public class headmove : MonoBehaviour
     void Start()
     {
         rb.AddForce(new Vector2(Random.Range(10000f, 5000f), Random.Range(-10000f, -5000f)));
-        rb.AddTorque(5000f, ForceMode2D.Impulse);
+        rb.AddTorque(Random.Range(-5000f, 5000f), ForceMode2D.Impulse);
     }
     void Update()
     {
